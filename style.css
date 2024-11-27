@@ -1,0 +1,174 @@
+style.css
+
+/* Settingan Awal Css */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+/* Style Navbar */
+
+.navbar {
+  width: 100%;
+  background: transparent;
+  position: absolute;
+}
+
+/* Style Navbar Container */
+.navbar-container {
+  width: 88.3%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  text-align: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 30px;
+  margin-right: 1rem;
+}
+
+.links {
+  display: flex;
+  font-weight: 500;
+  gap: 2rem;
+}
+
+.links li a {
+  color: white;
+}
+
+.links li a:hover {
+  transition: 0.5s;
+  color: #03a9f4;
+}
+
+/* Style Container */
+.container {
+  width: 88.3%;
+  margin: 0 auto;
+}
+
+/* Style Background */
+
+.bg-full {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f172a;
+}
+
+/* Style Nama */
+.nama {
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: white;
+}
+
+/* Style Text Custom */
+
+.custom-text {
+  font-size: 8rem;
+  line-height: 1;
+  font-weight: bold;
+}
+
+.judul {
+  position: relative;
+}
+
+.judul h1 {
+  color: white;
+  position: relative;
+}
+
+.judul h1:nth-child(1) {
+  color: transparent;
+  position: absolute;
+  -webkit-text-stroke: 2px #03a9f4;
+}
+
+.judul h1:nth-child(2) {
+  animation: wave 4s ease-in-out infinite;
+  color: #03a9f4;
+}
+
+/* Style Animasi Text Custom */
+@keyframes wave {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      16% 44%,
+      33% 50%,
+      44% 60%,
+      50% 61%,
+      70% 59%,
+      84% 52%,
+      100% 0%,
+      0% 0%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
+
+/* Responsive Style */
+@media only screen and (max-width: 600px) {
+  .links {
+    display: none;
+  }
+  .bg-full {
+    align-items: start;
+    flex-wrap: wrap;
+  }
+  .nama {
+    margin-top: 13rem;
+    font-size: 2rem;
+  }
+  hr {
+    margin-bottom: 2rem;
+  }
+  .custom-text {
+    font-size: 3rem;
+  }
+}

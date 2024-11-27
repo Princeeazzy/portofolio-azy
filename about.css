@@ -1,0 +1,341 @@
+
+/* Settingan Awal Css */
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+/* Style Navbar */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-container {
+  width: 88.3%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+.scrolled {
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 30px;
+  margin-right: 1rem;
+}
+
+.links {
+  display: flex;
+  font-weight: 500;
+  gap: 2rem;
+}
+
+.links li a {
+  color: white;
+}
+
+.links li a:hover {
+  transition: 0.5s;
+  color: #03a9f4;
+}
+
+/* Style Container */
+.container {
+  width: 88.3%;
+  margin: 0 auto;
+}
+
+/* Style Background */
+.bg-full {
+  width: 100%;
+  height: auto;
+  display: grid;
+  place-items: center;
+  background-color: #0f172a;
+}
+
+/* Style Awal Tiap Section */
+
+.about-section {
+  margin-top: 8rem;
+  width: 75%;
+}
+
+.skill-section {
+  width: 100%;
+  margin-top: 8rem;
+}
+
+.certification-section {
+  margin-top: 14rem;
+}
+
+/* Style Konten Section */
+
+.judul {
+  font-size: 2.25rem;
+  color: white;
+}
+
+.divider {
+  margin: 10px 0;
+  width: 10rem;
+  height: 0.25rem;
+  background: #03a9f4;
+}
+
+.paragraf {
+  color: white;
+  font-size: 1.25rem;
+}
+
+/* Style background skill berjalan */
+.skill-animation {
+  height: 50px;
+  overflow: hidden;
+  margin: 1rem 0;
+  color: white;
+}
+
+.skill-animation > div > div {
+  padding: 0.25rem 0.75rem;
+  height: 2.81rem;
+  margin-bottom: 2.81rem;
+  display: inline-block;
+}
+
+.skill-animation div:first-child {
+  animation: text-animation 12s infinite;
+}
+
+.first div {
+  background-color: #ff4b00;
+}
+.second div {
+  background-color: #2196f3;
+}
+.third div {
+  background-color: #cd921e;
+}
+.fourth div {
+  background-color: teal;
+}
+.fifth div {
+  background-color: #01b7d6;
+}
+.sixth div {
+  background-color: #7f0af9;
+}
+.seventh div {
+  background-color: #c10528;
+}
+.eighth div {
+  background-color: #31475e;
+}
+
+.skill-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.skill-card {
+  background: rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.25rem;
+  border-radius: 10px;
+  transition: all ease 0.2s;
+}
+
+.skill-card:hover {
+  transform: scale(1.1);
+}
+
+.skill-card img {
+  width: 100px;
+}
+
+.certificate-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.certificate-card {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 1.25rem;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+.certificate-card:hover {
+  transform: scale(1.05);
+}
+
+.certificate-card h3 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-top: 1.25rem;
+}
+
+.certificate-card button {
+  padding: 0.5rem 1rem;
+  margin: 1.25rem 0;
+  font-size: 1.25rem;
+  background: #3b82f6;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.certificate-card img {
+  width: 100%;
+}
+
+/* Style animasi Teks berjalan */
+@keyframes text-animation {
+  0% {
+    margin-top: 0;
+  }
+  10% {
+    margin-top: -5.62rem;
+  }
+  20% {
+    margin-top: -11.48rem;
+  }
+  30% {
+    margin-top: -17.48rem;
+  }
+  40% {
+    margin-top: -23.48rem;
+  }
+  50% {
+    margin-top: -29.1rem;
+  }
+  60% {
+    margin-top: -35rem;
+  }
+  70% {
+    margin-top: -41.4rem;
+  }
+  80% {
+    margin-top: 0;
+  }
+  90% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+/* Style Footer */
+
+.footer {
+  margin-top: 2.5rem;
+  width: 100%;
+  height: 5rem;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  background-color: #080e20;
+}
+
+.footer p {
+  color: white;
+  font-size: 1.25rem;
+}
+
+/* Responsive Style */
+@media only screen and (max-width: 600px) {
+  .links {
+    display: none;
+  }
+  .judul {
+    font-size: 1.75rem;
+  }
+  .about-section {
+    width: 90%;
+    margin-top: 5rem;
+    padding: 0 0.75rem;
+  }
+  .about-section .paragraf {
+    font-size: 0.9rem;
+  }
+  .skill-section {
+    width: 90%;
+    margin-top: 5rem;
+    padding: 0 0.75rem;
+  }
+  .skill-animation {
+    height: 40px;
+  }
+  .certification-section {
+    width: 90%;
+    margin-top: 5rem;
+    padding: 0 0.75rem;
+  }
+  .certificate-card h3 {
+    font-size: 1rem;
+  }
+  .skill-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .certificate-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer p {
+    padding: 0 2rem;
+    font-size: 1rem;
+  }
+}

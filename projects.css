@@ -1,0 +1,168 @@
+
+/* Settingan Awal Css */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+/* Style Navbar */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-container {
+  width: 88.3%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 30px;
+  margin-right: 1rem;
+}
+
+.links {
+  display: flex;
+  font-weight: 500;
+  gap: 2rem;
+}
+
+.links li a {
+  color: white;
+}
+
+.links li a:hover {
+  transition: 0.5s;
+  color: #03a9f4;
+}
+
+.scrolled {
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+/* Style Container */
+.container {
+  width: 88.3%;
+  margin: 0 auto;
+}
+
+/* Style Background */
+.bg-full {
+  width: 100%;
+  height: auto;
+  display: grid;
+  place-items: center;
+  background-color: #0f172a;
+}
+
+/* Style Project Section */
+.projects-section {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+/* Style Project Content */
+
+.judul {
+  font-size: 2.25rem;
+  color: white;
+}
+
+.divider {
+  margin: 10px 0;
+  width: 10rem;
+  height: 0.25rem;
+  background: #03a9f4;
+}
+
+.projects-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.projects-card {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 1.25rem;
+  border-radius: 5px;
+}
+
+.projects-card h3 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-top: 1.25rem;
+}
+
+.projects-card button {
+  padding: 0.5rem 1rem;
+  margin: 1.25rem 0;
+  font-size: 1.25rem;
+  background: #004ecb;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.projects-card img {
+  width: 100%;
+  height: auto;
+}
+
+/* Responsive Style */
+@media only screen and (max-width: 600px) {
+  .links {
+    display: none;
+  }
+  .judul {
+    font-size: 1.75rem;
+  }
+  .projects-section {
+    width: 90%;
+    margin-top: 5rem;
+    padding: 0 0.75rem;
+  }
+  .projects-card h3 {
+    font-size: 1rem;
+  }
+  .projects-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
